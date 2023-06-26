@@ -23,8 +23,11 @@ print(full_name.title())
  Видаліть пропуски і збережіть новий результат.
 '''
 
-first_name1 = ' Yulia  '
-print('\t' + first_name1.strip() + '\n' + second_name)
+first_name = first_name.replace('Yulia', ' Yulia   ')
+full_name = first_name + '\n' + '\t' + second_name
+print(full_name)
+full_name = first_name.strip() + '\n' + '\t' + second_name
+print(full_name)
 
 '''
 Task 2
