@@ -20,3 +20,5 @@ if action == 'earliest':
 if action == 'latest':
     print(notes)
     action = input('Оберіть дію (add, earliest, latest, longest, shortest, Exit): ')
+if action == 'Exit':
+    print('Finish')
