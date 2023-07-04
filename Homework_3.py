@@ -9,7 +9,8 @@ while i:
     elif action == 'earliest':
         print(notes)
     elif action == 'latest':
-        print(list(reversed(notes)))
+        notes.reverse()
+        print(notes)
     elif action == 'longest':
         notes.sort(reverse=True, key=len)
         print(notes)
