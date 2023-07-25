@@ -37,10 +37,7 @@ def findNewDate():
 findNewDate()
 
 #4
-from datetime import datetime
 import timespan as timespan
-from datetime import datetime
-
 
 
 def findAge(birthDate):
