@@ -19,7 +19,7 @@ class Racer(Cars):
         print("You are successfully registered in the race!")
 
 
-class Characteristics(Racer):
+class Characteristics(Racer, ABC):
     def __init__(self, brand, color, number, maxSpeed, engine):
         super().__init__(brand, color, number)
         self.maxSpeed = maxSpeed
@@ -39,3 +39,4 @@ McQueen.registration()
 McQueen = Characteristics('Porshe', 'Red', 95, 500, 2)
 McQueen.info()
 McQueen.chanceToWin()
+
