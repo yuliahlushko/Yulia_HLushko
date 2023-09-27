@@ -7,7 +7,6 @@ from homework_17.pages.dashboard import Dashboard
 def driver():
     driver = Chrome()
     driver.get('https://kachorovska.com/')
-    driver.get('https://kachorovska.com/')
     driver.maximize_window()
 
     yield driver
