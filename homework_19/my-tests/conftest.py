@@ -1,12 +1,11 @@
 from selenium.webdriver import Chrome
 import pytest
-from homework_17.pages.dashboard import Dashboard
+from homework_19.pages.start_page import Start_page
 
 
 @pytest.fixture(scope='session')
 def driver():
     driver = Chrome()
-    driver.get('https://kachorovska.com/')
     driver.maximize_window()
 
     yield driver
@@ -14,5 +13,9 @@ def driver():
 
 
 @pytest.fixture()
-def dashboard(driver):
-    yield Dashboard(driver)
+def start_page(driver):
+    driver.get('https://bi.ua/')
+
+    yield Start_page(driver)
+
+

@@ -1,11 +1,15 @@
 from homework_19.pages.homepage import Homepage
-from homework_19.locators.base_page_locators import Base_page_Locators
+from homework_19.locators.start_page_locators import Start_page_Locators
+from homework_19.pages.homepage import Cookies
+from homework_19.pages.homepage import LocalStorage
 
 
-class Base_page(Homepage):
+class Start_page(Homepage):
     def __init__(self, driver):
         super().__init__(driver)
-        self.locators = Base_page_Locators()
+        self.locators = Start_page_Locators()
+        self.cookies=Cookies(driver)
+        self.local_storage = LocalStorage(driver)
 
     def open_hero_category(self):
         self.click_on_element(self.locators.hero)
@@ -30,7 +34,3 @@ class Base_page(Homepage):
 
 
 
-
-
-'''    driver.add_cookie({'name':'car', 'value':'red'})
-    print(f'cookie:{driver.get_cookie("car")}')'''

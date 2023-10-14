@@ -1,4 +1,4 @@
-class Base_page_Locators:
+class Start_page_Locators:
     def __init__(self):
         self.hero = ('xpath', "//a[@class='hNavA'][1]")
         self.sign_in = ('xpath', "//div[@class='ico i-hu']")
